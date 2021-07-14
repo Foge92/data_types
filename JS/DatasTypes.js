@@ -311,3 +311,49 @@ undefinedBoolean=Boolean(value15);
 console.log(undefinedBoolean);
 console.log("typeof undefined Boolean ["+typeof(undefinedBoolean)+"]");
 console.log("-------------------------");
+
+/*
+#### Bonus 1:
+Ve a [lorem ipsum generator](http://www.lipsum.com/) y:
+  - Crea 3 parrafos. Guarda el texto en una variable.
+  - Haz que tu programa cuente el número de palabras del parrafo.
+  - Haz que tu programa cuente cuantas veces aparece  [`et`](https://en.wiktionary.org/wiki/et#Latin) en el texto.
+*/
+
+loremIpsum="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ultricies ut magna id scelerisque. Curabitur vitae tellus viverra, vehicula ex non, dignissim ipsum. Mauris nec tortor nibh. Pellentesque nec rhoncus metus. Sed lobortis justo accumsan aliquam commodo. Duis id bibendum libero, eu fermentum enim. Vivamus tincidunt felis ut velit mollis, at faucibus dolor viverra. Donec vel est orci.\n\n"
+            +"Nam sed lobortis eros, a pulvinar lorem. Donec fringilla massa vel odio commodo vestibulum at nec dolor. Cras eget volutpat odio, eleifend semper lorem. Fusce rhoncus elementum ultricies. Proin consectetur, ipsum eu facilisis auctor, magna est euismod augue, vel finibus felis eros vel eros. Etiam commodo quam velit, vel pellentesque nisl euismod vitae. Donec ut tortor gravida, vestibulum nunc at, placerat leo. Pellentesque hendrerit metus dui, tincidunt condimentum lacus tincidunt eu. In at facilisis nisi. Pellentesque a rutrum turpis. Fusce ac egestas lectus, ac sodales est. Cras nisi enim, commodo eget mauris vel, faucibus dapibus ex. Nam vel mauris quis ex aliquam bibendum. Sed vel dignissim ligula, vel lacinia lacus. Mauris molestie quis augue placerat porta.\n\n"
+            +"Fusce luctus luctus leo, et malesuada orci cursus sit amet. Etiam vitae mi blandit, sagittis neque in, finibus metus. Mauris pellentesque felis non nulla finibus sollicitudin sit amet sit amet velit. Donec ultricies aliquet est, tempus condimentum orci bibendum in. Vestibulum gravida lacinia finibus. In convallis, orci lobortis accumsan vehicula, elit nisi egestas quam, ac volutpat eros velit eu ex. Praesent purus nulla, ultrices finibus sem a, ultricies tristique est. Nulla pulvinar ante id urna consequat congue. Praesent sed nisi nec elit efficitur accumsan vel a neque. Vivamus at aliquam magna, sed scelerisque elit. Nam in varius neque. Fusce vel nulla consequat, pretium sem sit amet, posuere ligula. Integer lorem ex, suscipit nec interdum a, porttitor non magna."
+
+console.log(loremIpsum);
+
+loremIpsum="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ultricies ut magna id scelerisque. Curabitur vitae tellus viverra, vehicula ex non, dignissim ipsum. Mauris nec tortor nibh. Pellentesque nec rhoncus metus. Sed lobortis justo accumsan aliquam commodo. Duis id bibendum libero, eu fermentum enim. Vivamus tincidunt felis ut velit mollis, at faucibus dolor viverra. Donec vel est orci. "
+            +"Nam sed lobortis eros, a pulvinar lorem. Donec fringilla massa vel odio commodo vestibulum at nec dolor. Cras eget volutpat odio, eleifend semper lorem. Fusce rhoncus elementum ultricies. Proin consectetur, ipsum eu facilisis auctor, magna est euismod augue, vel finibus felis eros vel eros. Etiam commodo quam velit, vel pellentesque nisl euismod vitae. Donec ut tortor gravida, vestibulum nunc at, placerat leo. Pellentesque hendrerit metus dui, tincidunt condimentum lacus tincidunt eu. In at facilisis nisi. Pellentesque a rutrum turpis. Fusce ac egestas lectus, ac sodales est. Cras nisi enim, commodo eget mauris vel, faucibus dapibus ex. Nam vel mauris quis ex aliquam bibendum. Sed vel dignissim ligula, vel lacinia lacus. Mauris molestie quis augue placerat porta. "
+            +"Fusce luctus luctus leo, et malesuada orci cursus sit amet. Etiam vitae mi blandit, sagittis neque in, finibus metus. Mauris pellentesque felis non nulla finibus sollicitudin sit amet sit amet velit. Donec ultricies aliquet est, tempus condimentum orci bibendum in. Vestibulum gravida lacinia finibus. In convallis, orci lobortis accumsan vehicula, elit nisi egestas quam, ac volutpat eros velit eu ex. Praesent purus nulla, ultrices finibus sem a, ultricies tristique est. Nulla pulvinar ante id urna consequat congue. Praesent sed nisi nec elit efficitur accumsan vel a neque. Vivamus at aliquam magna, sed scelerisque elit. Nam in varius neque. Fusce vel nulla consequat, pretium sem sit amet, posuere ligula. Integer lorem ex, suscipit nec interdum a, porttitor non magna."
+
+console.log(loremIpsum);
+
+/*Ocupando funcion split*/
+loremIpsumDividido = loremIpsum.split (" ");
+numeroPalabras = loremIpsumDividido.length;
+console.log(numeroPalabras);
+
+function contadorPalabras(parrafo){
+    let tamano=parrafo.length;
+    let contador=0;
+    for (var i=0; i < tamano; i++) {
+        if(parrafo[i]==" "){
+            if(i>0 && i<tamano-1){
+                contador=contador+1;
+            }
+        }
+    }
+
+    if(contador>=1){
+        contador=contador+1;
+    }
+
+    console.log(contador);
+}
+
+/*Mi funcion hecha llamada: Contador de palabras*/
+contadorPalabras(loremIpsum);
