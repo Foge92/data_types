@@ -1,0 +1,13 @@
+th {
+    font-size: 1.3rem;
+}
+
+th,td {
+    padding: 10px;
+    border: 1px solid black;
+    font-weight: bolder;
+}
+
+tbody tr:nth-child(even){
+    background-color: rgb(167, 167, 250);
+}
