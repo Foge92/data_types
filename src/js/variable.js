@@ -15,4 +15,11 @@ console.log("La suma de "+numUno+" y "+numDos+" es "+(numDos+numUno));
 let nombre="José Antonio";
 let hobby="Ver Anime";
 let mascota="Perro";
-console.log("Hola soy "+nombre+". Me gusta "+hobby+" en mis tiempos libres y tengo un "+mascota+" como mascota.")
+console.log("Hola soy "+nombre+". Me gusta "+hobby+" en mis tiempos libres y tengo un "+mascota+" como mascota.");
+//Conversión
+function conversion(valor){
+console.log(Number(valor));
+console.log(String(valor));
+console.log(Boolean(valor));
+}
+conversion(undefined);
