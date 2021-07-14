@@ -79,3 +79,19 @@ console.log(Boolean(null)); // false
 console.log(Number(undefined)); // NaN
 console.log(String(undefined)); // "undefined"
 console.log(Boolean(undefined)); // false
+
+// Bonuses
+
+function palindromoChecker(par) {
+    par = par.toUpperCase();
+    par = par.replaceAll(" ","");
+    var copy = par;
+    var stringToArray = par.split("");
+    var reverseArray = stringToArray.reverse();
+    var stringBackwards = reverseArray.join(""); 
+    if(copy === stringBackwards){
+      return "Es un palíndromo"
+    } else { return "No es un palíndromo"}
+}
+
+palindromoChecker("La banana ananabal");
