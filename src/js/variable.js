@@ -46,6 +46,32 @@ function buscaret(parrafo){
 }
 console.log("El numero de palabras es "+contar(contenedor));
 console.log("Las veces que se repite et es: "+buscaret(contenedor));
-
+//Bonus 2
+let phraseToCheck="A man, a plan, a canal, Panama!";
+//funcion para determinar si es un palindromo
+function palindromo(frase){
+    //Hacemos mayuscula la frase y eliminamos todo lo que no sean letras
+    let cadena=frase.toUpperCase().split(/[^a-zA-Z]*/);
+    //Verificamos si hay subcadenas vacias
+    if(cadena.indexOf("")!==-1){
+        cadena.splice(cadena.indexOf(""),1);
+    }
+    //Comparamos las letras, la primera con la ultima
+    //y se avanza con el indice
+    for(let i=0;i<cadena.length;i++){
+        
+        if(cadena[i]!==cadena[cadena.length-1-i]){
+            return false;
+        }
+    }
+    return true;
+}
+//Se comprueba cual es palindromo
+if(palindromo(phraseToCheck)){
+    console.log("Tu frase: " + phraseToCheck + " es un palindromo");
+}
+else{
+    console.log("Tu frase: " + phraseToCheck + " no es un palindromo");
+}
 
 
