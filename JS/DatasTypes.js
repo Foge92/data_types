@@ -357,3 +357,109 @@ function contadorPalabras(parrafo){
 
 /*Mi funcion hecha llamada: Contador de palabras*/
 contadorPalabras(loremIpsum);
+
+/*
+#### Bonus 2:
+Crea una nueva variable `phraseToCheck` y esta debe de contener un string como valor. Escribe un programa que verifique si esta variable es 
+un [Palindromo](https://en.wikipedia.org/wiki/Palindrome). Te damos unos ejemplos de palindromos.
+
+  - "A man, a plan, a canal, Panama!"
+  - "Amor, Roma"
+  - "race car"
+  - "stack cats"
+  - "step on no pets"
+  - "taco cat"
+  - "put it up"
+  - "Was it a car or a cat I saw?" and "No 'x' in Nixon".
+*/
+
+function palindromo(palabra){
+    palabraO=palabra;
+    palabra = eliminarAcentos(palabra);
+    palabra = palabra.toLowerCase();
+    palabra=palabra.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()?]/g,"");
+
+    if(verificarPalindromo(palabra)){
+        console.log("---------------------------------------------");
+        console.log("La palabra: "+palabraO+", SI es un palindromo.");
+        console.log("---------------------------------------------");
+    } else{
+        console.log("---------------------------------------------");
+        console.log("La palabra: "+palabraO+", NO es un palindromo.");
+        console.log("---------------------------------------------");
+    }
+
+}
+
+function verificarPalindromo(palabra){
+    let tamano=palabra.length;
+    for (var i=0; i < tamano/2; i++) {
+        if(palabra[i] != palabra[tamano-1-i]){
+            return false;
+        }else{
+            return true;
+        }
+    }
+}
+
+function eliminarAcentos(texto) {
+    return texto.normalize('NFD').replace(/([^n\u0300-\u036f]|n(?!\u0303(?![\u0300-\u036f])))[\u0300-\u036f]+/gi,"$1").normalize();
+}
+
+let phraseToCheck;
+
+phraseToCheck="A man, a plan, a canal, Panama!";
+palindromo(phraseToCheck);
+
+phraseToCheck="Amor, Roma";
+palindromo(phraseToCheck);
+
+phraseToCheck="race car";
+palindromo(phraseToCheck);
+
+phraseToCheck="stack cats";
+palindromo(phraseToCheck);
+
+phraseToCheck="step on no pets";
+palindromo(phraseToCheck);
+
+phraseToCheck="taco cat";
+palindromo(phraseToCheck);
+
+phraseToCheck="put it up";
+palindromo(phraseToCheck);
+
+phraseToCheck="Was it a car or a cat I saw?";
+palindromo(phraseToCheck);
+
+phraseToCheck="No 'x' in Nixon";
+palindromo(phraseToCheck);
+
+/*
+Pruebas Mias
+*/
+
+phraseToCheck="No 'x' in Nixon Hola";
+palindromo(phraseToCheck);
+
+phraseToCheck="A man, a plan, a canal, Panama! i";
+palindromo(phraseToCheck);
+
+phraseToCheck="A la catalana banal, atácala.";
+palindromo(phraseToCheck);
+
+phraseToCheck="A mamá, Roma le aviva el amor a papá, y a papá, Roma le aviva el amor a mamá.";
+palindromo(phraseToCheck);
+
+phraseToCheck="A Mercedes, ese de crema.";
+palindromo(phraseToCheck);
+
+phraseToCheck="A mi loca Colima.";
+palindromo(phraseToCheck);
+
+phraseToCheck="A ti no, bonita.";
+palindromo(phraseToCheck);
+
+phraseToCheck="ti no, bonita.";
+palindromo(phraseToCheck);
+
