@@ -12,6 +12,7 @@ $parrafos.forEach((el, indx) => {
     parrafoActual = parrafoActual.replace(/^ /g,"");
     parrafoActual = parrafoActual.replace(/ $/g,"");
 
+    //Aqui vamos a convertir el parrafo en un array separandolo por espacios para sacar las palabras
     let parrafoContar = parrafoActual.split(" ").length;
     console.log(`El numero de palabras en el parrafo ${indx + 1} es de ${parrafoContar} palabras`);
     console.log(`El numero de veces que se repite la conjugacion "et" en el parrafo ${indx + 1} es de ${parrafoActual.match(/et/g).length} veces`);
