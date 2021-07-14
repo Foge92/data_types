@@ -13,7 +13,7 @@
 - [Fork](https://guides.github.com/activities/forking/) este repo
 - Clona este repo
 - Haz una pull request para que tus maestros puedan revisar.
-_Deberias de hacer una PR (Pull Request) tan pronto hayas echo algún cambio. No deberías esperar hasta que termines completamente el ejersicio,
+_Deberias de hacer una PR (Pull Request) tan pronto hayas hecho algún cambio. No deberías esperar hasta que termines completamente el ejercicio,
 para hacer tu PR. Después de que haces tu primera PR, los cambios subsecuentes van a aparecer automaticamente en tu PR._
 
 ## Envío
