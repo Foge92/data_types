@@ -46,6 +46,98 @@ console.log("typeof value [" + typeof(value3) + "]");
 value3 = Boolean(value3); // cambiando la variable 0 a tipo de dato Boolean
 console.log("typeof value [" + typeof(value3) + "]");
 
+let value4 = 1;
+console.log("typeof value [" + typeof(value4) + "]");
+value4 = String(value4); 
+console.log("typeof value [" + typeof(value4) + "]");
+value4 = Boolean(value4); 
+console.log("typeof value [" + typeof(value4) + "]");
+
+let value5 = "0"; 
+console.log("typeof value [" + typeof(value5) + "]"); 
+value5 = Number(value5);
+console.log("typeof value [" + typeof(value5) + "]"); 
+value5 = Boolean(value5);
+console.log("typeof value [" + typeof(value5) + "]"); 
+
+let value6 = "000"; 
+console.log("typeof value [" + typeof(value6) + "]"); 
+value6 = Number(value6);
+console.log("typeof value [" + typeof(value6) + "]"); 
+value6 = Boolean(value6);
+console.log("typeof value [" + typeof(value6) + "]");
+
+let value7 = "1"; 
+console.log("typeof value [" + typeof(value7) + "]"); 
+value7 = Number(value7);
+console.log("typeof value [" + typeof(value7) + "]"); 
+value7 = Boolean(value7);
+console.log("typeof value [" + typeof(value7) + "]");
+
+let value8 = NaN;
+console.log("typeof value [" + typeof(value8) + "]"); 
+value8 = String(value8);
+console.log("typeof value [" + typeof(value8) + "]");
+value8 = Boolean(value8);
+console.log("typeof value [" + typeof(value8) + "]");
+
+let value9 = Infinity;
+console.log("typeof value [" + typeof(value9) + "]"); 
+value9 = String(value9);
+console.log("typeof value [" + typeof(value9) + "]");
+value9 = Boolean(value9);
+console.log("typeof value [" + typeof(value9) + "]");
+
+let dato = -Infinity;
+console.log("typeof value [" + typeof(dato) + "]"); 
+dato = String(dato);
+console.log("typeof value [" + typeof(dato) + "]");
+dato = Boolean(dato);
+console.log("typeof value [" + typeof(dato) + "]");
+
+let dato1 ="";
+console.log("typeof value [" + typeof(dato1) + "]"); 
+dato1 = Number(dato1);
+console.log("typeof value [" + typeof(dato1) + "]");
+dato1 = Boolean(dato1);
+console.log("typeof value [" + typeof(dato1) + "]");
+
+let dato2 ="20";
+console.log("typeof value [" + typeof(dato2) + "]"); 
+dato2 = Number(dato2);
+console.log("typeof value [" + typeof(dato2) + "]");
+dato2 = Boolean(dato2);
+console.log("typeof value [" + typeof(dato2) + "]");
+
+let dato3 ="Twenty";
+console.log("typeof value [" + typeof(dato3) + "]"); 
+dato3 = Number(dato3);
+console.log("typeof value [" + typeof(dato3) + "]");
+dato3 = Boolean(dato3);
+console.log("typeof value [" + typeof(dato3) + "]");
+
+let dato4 = null;
+console.log("typeof value [" + typeof(dato4) + "]");
+dato4 = String(dato4);
+console.log("typeof value [" + typeof(dato4) + "]");
+dato4 = Number(dato4);
+console.log("typeof value [" + typeof(dato4) + "]");
+dato4 = Boolean(dato4);
+console.log("typeof value [" + typeof(dato4) + "]");
+
+let dato5 = undefinited;
+console.log("typeof value [" + typeof(dato4) + "]"); // Con este valor de variable no se puede trabajar, es decir, no se puede convertir ni a tipo Number, String o Boolean
+
+
+
+
+
+
+
+
+
+
+
 
 
 

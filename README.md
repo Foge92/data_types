@@ -50,23 +50,25 @@ Crea una Pull Request para que tus instructores puedan verificar
 
 Aplica lo aprendido en clase respecto a conversión de datos, prueba y llena la siguiente tabla.
 
+-------------TENGO DUDA DE COMO LLENAR LA TABLA. NOSE SI LA LLENE BIEN.-------------------
+
 | Value to be converted | number() | String() | Boolean() |
 |-----------------------|----------|----------|-----------|
-| false                 |          |          |           |
-| true                  |          |          |           |
-| 0                     |          |          |           |
-| 1                     |          |          |           |
-| “0”                   |          |          |           |
-| “000”                 |          |          |           |
-| “1”                   |          |          |           |
-| NaN                   |          |          |           |
-| Infinity              |          |          |           |
-| -Infinity             |          |          |           |
-| “”                    |          |          |           |
-| “20”                  |          |          |           |
-| “Twenty”              |          |          |           |
-| null                  |          |          |           |
-| undefinited           |          |          |           |
+| false                 |          |          |     X     |
+| true                  |          |          |     x     |
+| 0                     |    x     |          |           |
+| 1                     |    x     |          |           |
+| “0”                   |          |     x    |           |
+| “000”                 |          |     x    |           |
+| “1”                   |          |     x    |           |
+| NaN                   |    x     |          |           |
+| Infinity              |    x     |          |           |
+| -Infinity             |    x     |          |           |
+| “”                    |          |     x    |           |
+| “20”                  |          |     x    |           |
+| “Twenty”              |          |     x    |           |
+| null                  |    este es un objeto            |
+| undefinited           |      no esta definido           |
     
 #### Bonus 1:
 Ve a [lorem ipsum generator](http://www.lipsum.com/) y:
