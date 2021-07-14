@@ -23,9 +23,9 @@ console.log(sumaResultado);
 Haz que se despliegue la información en el lugar correcto:
 Ejemplo : "Hola soy YYYY. Me gusta YYYYYY  en mis tiempos libres y tengo un YYYY como mascota" */
 
-let nombre = prompt("¿Cual es tu nombre?", "escribe uno");
+/* let nombre = prompt("¿Cual es tu nombre?", "escribe uno");
 let hobby = prompt("¿Cual es tu hobby favorito?", "escribe que te gusta hacer");
-let nombreMascota = prompt("¿Que mascota tienes?", "escribe su nombre aqui");
+let nombreMascota = prompt("¿Que mascota tienes?", "escribe su nombre aqui"); */
 
 let presentacion = `Hola, soy ${nombre}. Me gusta ${hobby} en mis tiempos libres y tengo un ${nombreMascota}`;
 
