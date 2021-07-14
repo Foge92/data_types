@@ -10,3 +10,8 @@ let hacker1;
 hacker1="Iósif Stalin";
 /*1.4 Imprime `"El nombre del conductor es XXXX"`.*/
 console.log("El nombre del conductor es: "+hacker1);
+/*1.5 Imprime la suma de los siguientes valores, usando las siguientes variables :  let numUno = 38, let numDos = 14*/
+let numUno=38;
+let numDos=14;
+console.log("La suma de los dos números es: ",numUno+numDos);
+
