@@ -1,3 +1,4 @@
+//ITERACIÓN 1
 //1.1 Variable con la marca de un automóvil
 let marcaAuto = "Nissan";
 console.log("La marca es " + marcaAuto);
@@ -23,5 +24,15 @@ let pet = "perro";
 let miEdad = 23;
 console.log("Hola, soy " + nombre + " y tengo " + miEdad +" años. Me gusta " + hobby +" en mis tiempos libres y tengo un " + pet + " como mascota.");
 
+// ITERACIÓN 2
+var numPrueba = Number(false);
+console.log("El valor es " + numPrueba);
+console.log(typeof(numPrueba));
 
+var striPrueba = String(false);
+console.log("El valor es " + striPrueba);
+console.log(typeof(striPrueba));
 
+var boolPrueba = Boolean(false);
+console.log("El valor es " + boolPrueba);
+console.log(typeof(boolPrueba));
