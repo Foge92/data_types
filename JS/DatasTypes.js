@@ -14,4 +14,14 @@ console.log("El nombre del conductor es: "+hacker1);
 let numUno=38;
 let numDos=14;
 console.log("La suma de los dos números es: ",numUno+numDos);
+/*1.6 Crea una tarjeta de presentación, y crea variables tales como nombre, hobby, mascota
+Haz que se despliegue la información en el lugar correcto:
+Ejemplo : "Hola soy YYYY. Me gusta YYYYYY  en mis tiempos libres y tengo un YYYY como mascota"*/
+let nombre;
+nombre="Israel Hernández Vázquez";
+let hobby;
+hobby="Ver Anime en mis tiempos libres y aprender cosas nuevas (Ejemplo: Leer acerca de la URSS)";
+let mascota;
+mascota="gato"
+console.log("Hola soy: "+nombre+". Me gusta "+hobby+" en mis tiempos libres y tengo un "+mascota+" como mascota");
 
