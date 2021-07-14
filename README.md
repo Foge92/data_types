@@ -13,8 +13,12 @@
 - [Fork](https://guides.github.com/activities/forking/) este repo
 - Clona este repo
 - Haz una pull request para que tus maestros puedan revisar.
-_Deberias de hacer una PR (Pull Request) tan pronto hayas hecho algún cambio. No deberías esperar hasta que termines completamente el ejercicio,
+ 
+_Deberias de hacer una PR (Pull Request) tan pronto hayas echo algún cambio. No deberías esperar hasta que termines completamente el ejersicio,
 para hacer tu PR. Después de que haces tu primera PR, los cambios subsecuentes van a aparecer automaticamente en tu PR._
+
+_Haz una pull request para que tus maestros puedan revisar. Deberías de hacer una PR (Pull Request) tan pronto hayas hecho algún cambio. No deberías esperar hasta que termines completamente el ejercicio, para hacer tu PR. Después de que haces tu primer PR, los cambios subsecuentes van a aparecer automáticamente en tu PR._
+
 
 ## Envío
 
@@ -70,8 +74,8 @@ Aplica lo aprendido en clase respecto a conversión de datos, prueba y llena la 
     
 #### Bonus 1:
 Ve a [lorem ipsum generator](http://www.lipsum.com/) y:
-  - Crea 3 parrafos. Guarda el texto en una variable.
-  - Haz que tu programa cuente el número de palabras del parrafo.
+  - Crea 3 párrafos. Guarda el texto en una variable.
+  - Haz que tu programa cuente el número de palabras del párrafo.
   - Haz que tu programa cuente cuantas veces aparece  [`et`](https://en.wiktionary.org/wiki/et#Latin) en el texto.
 
 #### Bonus 2:
@@ -93,6 +97,4 @@ un [Palindromo](https://en.wikipedia.org/wiki/Palindrome). Te damos unos ejemplo
 - [String - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
 
 
-__Happy coding!__ :heart:
-
-- 
+__Happy coding!__ :heart: 
