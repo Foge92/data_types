@@ -5,3 +5,8 @@ console.log(marcaAutomovil);
 let edad;
 edad=24;
 console.log(edad);
+/*1.3 Crea una variable `hacker1` con el nombre del conductor.*/
+let hacker1;
+hacker1="Iósif Stalin";
+/*1.4 Imprime `"El nombre del conductor es XXXX"`.*/
+console.log("El nombre del conductor es: "+hacker1);
