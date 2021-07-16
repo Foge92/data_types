@@ -11,11 +11,143 @@
 
 <body>
     <div class="tarjeta-presentacion">
-    <p class="tarjeta-presentacion-info">
-        
-    </p>
+        <p class="tarjeta-presentacion-info">
+        </p>
+    </div>
 
-</div>
+    <table class="tablaConversion">
+        <tr>
+            <th>Value to be converted</th>
+            <th>number()</th>
+            <th>String()</th>
+            <th>Boolean()</th>
+        </tr>
+        <tr>
+            <th>false</th>
+            <th>0</th> <!-- Number-->
+            <th>"false"</th> <!-- String-->
+            <th>false</th> <!-- Boolean-->
+        </tr>
+        <tr>
+            <th>true</th>
+            <th>1</th> <!-- Number-->
+            <th>"true"</th> <!-- String-->
+            <th>true</th> <!-- Boolean-->
+        </tr>
+        <tr>
+            <th>0</th>
+            <th>0</th> <!-- Number-->
+            <th>"0"</th> <!-- String-->
+            <th>false</th> <!-- Boolean-->
+        </tr>
+        <tr>
+            <th>1</th>
+            <th>1</th> <!-- Number-->
+            <th>"1"</th> <!-- String-->
+            <th>true</th> <!-- Boolean-->
+        </tr>
+        <tr>
+            <th>"0"</th>
+            <th>0</th> <!-- Number-->
+            <th>"0"</th> <!-- String-->
+            <th>true</th> <!-- Boolean-->
+        </tr>
+        <tr>
+            <th>“000”</th>
+            <th></th> <!-- Number-->
+            <th>"000"</th> <!-- String-->
+            <th>true</th> <!-- Boolean-->
+        </tr>
+        <tr>
+            <th>"1"</th>
+            <th>1</th> <!-- Number-->
+            <th>"1"</th> <!-- String-->
+            <th>true</th> <!-- Boolean-->
+        </tr>
+        <tr>
+            <th>NaN</th>
+            <th>NaN</th> <!-- Number-->
+            <th>"NaN"</th> <!-- String-->
+            <th>false</th> <!-- Boolean-->
+        </tr>
+        <tr>
+            <th>Infinity</th>
+            <th>Infinity</th> <!-- Number-->
+            <th>"Infinity"</th> <!-- String-->
+            <th>true</th> <!-- Boolean-->
+        </tr>
+        <tr>
+            <th>-Infinity</th>
+            <th>-Infinity</th> <!-- Number-->
+            <th>"-Infinity"</th> <!-- String-->
+            <th>true</th> <!-- Boolean-->
+        </tr>
+        <tr>
+            <th>" "</th>
+            <th>0</th> <!-- Number-->
+            <th>" "</th> <!-- String-->
+            <th>false</th> <!-- Boolean-->
+        </tr>
+        <tr>
+            <th>“20”</th>
+            <th>20</th> <!-- Number-->
+            <th>“20”</th> <!-- String-->
+            <th>true</th> <!-- Boolean-->
+        </tr>
+        <tr>
+            <th>“Twenty”</th>
+            <th>NaN</th> <!-- Number-->
+            <th>“Twenty”</th> <!-- String-->
+            <th>true</th> <!-- Boolean-->
+        </tr>
+        <tr>
+            <th>null</th>
+            <th>0</th> <!-- Number-->
+            <th>"null"</th> <!-- String-->
+            <th>false</th> <!-- Boolean-->
+        </tr>
+        <tr>
+            <th>undefined</th>
+            <th>NaN</th> <!-- Number-->
+            <th>"undefined"</th> <!-- String-->
+            <th>false</th> <!-- Boolean-->
+        </tr>
+    </table>
+
+    <!--
+Bonus 1:
+Crea 3 parrafos. Guarda el texto en una variable.
+Haz que tu programa cuente el número de palabras del parrafo.
+Haz que tu programa cuente cuantas veces aparece et en el texto.
+-->
+    <div class="container">
+        <p class="parrafo-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vulputate vestibulum
+            lectus. Sed euismod eu lacus in mattis. Fusce efficitur diam vel auctor accumsan. Nullam finibus sem a dolor
+            rhoncus maximus. Aliquam venenatis tortor augue, in tristique diam mattis at. Nullam luctus nulla libero,
+            sit amet congue mauris facilisis vitae. In eleifend dapibus lacus nec fringilla. In elementum purus eu erat
+            ullamcorper, sit amet rhoncus ex fringilla. Nullam nisi nisl, volutpat nec purus quis, euismod dapibus
+            sapien. Aliquam laoreet urna sit amet lorem rhoncus, sit amet luctus diam gravida. Proin gravida, lectus id
+            semper finibus, elit neque fringilla mi, in finibus lorem augue id metus. Orci varius natoque penatibus et
+            magnis dis parturient montes, nascetur ridiculus mus. Proin lacinia orci leo, vel ornare est volutpat in.
+        </p>
+        <p class="parrafo-2">Nullam sollicitudin semper turpis, vitae feugiat massa. Vivamus ac urna quam. Nullam
+            ultrices quis diam sed scelerisque. Ut bibendum congue ipsum non finibus. Mauris vehicula quis turpis
+            iaculis venenatis. Sed nec sodales purus. Nulla laoreet dolor non erat hendrerit, et sagittis augue
+            volutpat. In metus dui, vehicula ut faucibus vitae, efficitur eget elit. Ut lacus ipsum, mollis quis mi at,
+            pulvinar mattis orci. Vivamus in accumsan eros. Maecenas est lorem, eleifend sed sapien vitae, suscipit
+            euismod leo. Maecenas quis tristique orci. Donec ac est eget est condimentum pulvinar id eu massa. Etiam
+            vitae massa non est venenatis commodo.</p>
+        <p class="parrafo-3">Proin sed neque eget eros tempor lobortis. Praesent volutpat magna bibendum massa bibendum
+            varius. Proin nunc diam, placerat sed pellentesque ut, tristique quis eros. Curabitur finibus mauris et
+            tincidunt mattis. Cras luctus molestie turpis sed eleifend. Phasellus nec justo nec nibh gravida
+            ullamcorper. Nulla facilisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel cursus
+            lectus, ac sodales augue. Integer vel consequat justo, id mollis lacus.</p>
+    </div>
+
+
+
+
     <script type="text/javascript" src="js/index.js"></script>
 </body>
+
 </html>
