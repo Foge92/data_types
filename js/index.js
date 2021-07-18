@@ -33,7 +33,7 @@ Haz que tu programa cuente el número de palabras del parrafo.
 Haz que tu programa cuente cuantas veces aparece et en el texto.
 */
 
-//let imprime_parrafo_1 = document.getElementById("parrafo-1");
+//encontrar numero de palabras de cada párrafo
 texto1 = document.getElementById("parrafo-1").innerHTML;
 console.log("El tamaño del párrafo es de " + texto1.split(' ').length + " palabras");
 
@@ -42,6 +42,33 @@ console.log("El tamaño del párrafo es de " + texto2.split(' ').length + " pala
 
 texto3 = document.getElementById("parrafo-3").innerHTML;
 console.log("El tamaño del párrafo es de " + texto3.split(' ').length + " palabras");
+
+//cuantas veces aparece et
+
+//dividir el texto en palabras y ponerlo en minúscula
+var texto_1 = document.getElementById("parrafo-1").innerHTML.toLowerCase().split(" ");
+var texto_2 = document.getElementById("parrafo-2").innerHTML.toLowerCase().split(" ");
+var texto_3 = document.getElementById("parrafo-3").innerHTML.toLowerCase().split(" ");
+obj = {};
+
+// no logré que en vez de "undefined" dijera "0 veces"
+function cuentaEt(texto){
+for (let i = 0; i < texto.length; i++) {
+    if (obj[texto[i]] === undefined) {
+        obj[texto[i]] = 1;
+        }       
+        else {
+        obj[texto[i]]++;
+    }
+}//for 
+
+//no logre que el numero del párrafo fuera automático e incremental 
+console.log("Et se repite "+ obj['et'] +" veces en el párrafo."); 
+}
+
+cuentaEt(texto_1);
+cuentaEt(texto_2);
+cuentaEt(texto_3);
 
 
 /*
