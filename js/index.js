@@ -32,40 +32,17 @@ Crea 3 parrafos. Guarda el texto en una variable.
 Haz que tu programa cuente el número de palabras del parrafo.
 Haz que tu programa cuente cuantas veces aparece et en el texto.
 */
-var parr1 = document.getElementsByClassName(".parrafo-1");
-var parr2 = document.getElementsByClassName(".parrafo-2");
-var parr3 = document.getElementsByClassName(".parrafo-3");
 
-var parrafo;
-var numeroPalabras;
-var parrafoDividido;
+//let imprime_parrafo_1 = document.getElementById("parrafo-1");
+texto1 = document.getElementById("parrafo-1").innerHTML;
+console.log("El tamaño del párrafo es de " + texto1.split(' ').length + " palabras");
 
-function cuentaPalabras(parrafo) {
-    parrafoDividido = parrafo.split(" ");
-    numeroPalabras = parrafoDividido.length;
+texto2 = document.getElementById("parrafo-2").innerHTML;
+console.log("El tamaño del párrafo es de " + texto2.split(' ').length + " palabras");
 
-    return `"El numero de palabras es ${numeroPalabras} ."`;
-} //cuenta palabras
+texto3 = document.getElementById("parrafo-3").innerHTML;
+console.log("El tamaño del párrafo es de " + texto3.split(' ').length + " palabras");
 
-console.log(cuentaPalabras(parr1));
-console.log(cuentaPalabras(parr2));
-console.log(cuentaPalabras(parr3));
-
-
-/*
-function cuentaEt(parrafo) {
-
-        if (parrafo.toLowerCase() === "et") 
-    
-        
-        return `"La palabra 'et' se repite ${veces} veces"`;
-
-}//cuentaEt
-
-console.log(cuentaEt(parr1));
-console.log(cuentaEt(parr2));
-console.log(cuentaEt(parr3));
-*/
 
 /*
 Bonus 2:
